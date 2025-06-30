@@ -1,0 +1,4 @@
+weightsOfEmbeddingDecoder400000Sentences100D.dat filter=lfs diff=lfs merge=lfs -text
+weightsOfEmbeddingEncoder400000Sentences100D.dat filter=lfs diff=lfs merge=lfs -text
+nmt_v2.weights.h5 filter=lfs diff=lfs merge=lfs -text
+glove.6B.100d.txt.word2vec filter=lfs diff=lfs merge=lfs -text
