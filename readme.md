@@ -19,7 +19,7 @@
 ### KULLANIM KILAVUZU
 
 - Eğer yeni bir model eğitmek istemiyorsanız, az eğitilmiş modeli kullanmak istiyorsanız kodu olduğu gibi çalıştırabilirsiniz; fakat şu adresten dil modelini indirip, projenin bulunduğu dizine "trmodel" ismiyle eklemelisiniz:
-  [https://github.com/akoksal/Turkish-Word2Vec?tab=readme-ov-file](https://github.com/akoksal/Turkish-Word2Vec?tab=readme-ov-file)
+  [https://github.com/akoksal/Turkish-Word2Vec?tab=readme-ov-file
 
 - Yeni bir model eğitmek için kodun başlarında bulunan **Hiperparametreler** kısmındaki `trainModel` parametresine `True` değerini veriniz.
 
@@ -143,7 +143,7 @@
 
 - Model mimarisi:
   
-  <img title="" src="https://github.com/369553/MakineCevirisi/modelTrain.png" alt="">
+  <img title="" src="https://github.com/369553/MakineCevirisi/blob/main/modelTrain.png?raw=true" alt="">
 
 - ..
 
