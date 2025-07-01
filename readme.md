@@ -173,4 +173,5 @@
 
 - Kodlayıcıya verileriniz verirken ters sırada vermeniz ve doldurma ("padding") işlemini cümle başına uygulanacak şekilde yapmanız; kod çözücüde ise bunun tam tersini yapmanız modelinizin bağlamı daha iyi yakalaması ve çeviri işlemini daha iyi yapması için bir yardımcı yöntemdir. Bu yöntemle kod çözücü model cümlenin başındaki kelîmeyi en son görmekte ve kodlayıcı model bu kelîmeyi ilk kelîme olarak daha iyi üretmektedir. Bu, uzun cümlelerde farkını daha çok hissettirebilecek bir püf noktadır. Bu yöntemle ayrıca, kırpılan cümlelerinizdeki anlam kaybı azalmaktadır; çünkü genelde cümle başı cümle sonuna göre daha önemlidir.
 
-# 
+- Çeviri yaparken üretilen simgeyi sonraki adımda makineye vermemiz gerekiyor. Yanî çeviri cümlesinin uzunluğu kadar tahmîn yaptırmamız gerekiyor
+  girdi olarak cümle uzunluğu veyâ max token kadar girdi vermeliyiz. Kaynak cümlenin çevirisinin kaç kelîmeden oluştuğunu bilemediğimiz için max token kadar olmalı. Çünkü, cümle içerisinde ilerlediğimizde hangi adım için kelîme üretimi yaptığımızı belirtmek için bu vektörün kendisine kadar olan kısımlarını doldurup, sonraki kısımlarını 0 olarak vermeliyiz. Yine de üretildikçe boyut arttırılabilir; fakat bu, her defasında yeni bir vektör oluşturmak anlamına geldiği için tasarruf sağlamaz; aksine gereksiz yük oluşturur.
